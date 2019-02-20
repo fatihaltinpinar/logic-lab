@@ -64,15 +64,15 @@
     <wire from="(100,80)" to="(160,80)"/>
     <wire from="(30,50)" to="(70,50)"/>
     <wire from="(30,80)" to="(70,80)"/>
-    <comp lib="1" loc="(100,50)" name="NOT Gate"/>
-    <comp lib="1" loc="(100,80)" name="NOT Gate"/>
+    <comp lib="0" loc="(30,80)" name="Pin"/>
     <comp lib="0" loc="(160,50)" name="Probe">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="0" loc="(30,80)" name="Pin"/>
+    <comp lib="1" loc="(100,80)" name="NOT Gate"/>
     <comp lib="0" loc="(30,50)" name="Pin"/>
     <comp lib="0" loc="(160,80)" name="Probe">
       <a name="facing" val="west"/>
     </comp>
+    <comp lib="1" loc="(100,50)" name="NOT Gate"/>
   </circuit>
 </project>
