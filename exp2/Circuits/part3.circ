@@ -60,32 +60,43 @@
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(50,70)" to="(80,70)"/>
+    <wire from="(110,170)" to="(110,270)"/>
     <wire from="(50,60)" to="(50,70)"/>
     <wire from="(80,70)" to="(80,80)"/>
     <wire from="(50,70)" to="(50,210)"/>
     <wire from="(80,130)" to="(80,270)"/>
     <wire from="(140,110)" to="(140,250)"/>
+    <wire from="(240,170)" to="(260,170)"/>
+    <wire from="(240,210)" to="(260,210)"/>
     <wire from="(110,60)" to="(110,80)"/>
     <wire from="(80,110)" to="(80,130)"/>
+    <wire from="(230,150)" to="(240,150)"/>
+    <wire from="(230,230)" to="(240,230)"/>
     <wire from="(140,60)" to="(140,80)"/>
     <wire from="(140,250)" to="(140,270)"/>
     <wire from="(240,150)" to="(240,170)"/>
     <wire from="(240,210)" to="(240,230)"/>
     <wire from="(140,250)" to="(180,250)"/>
-    <wire from="(310,190)" to="(350,190)"/>
-    <wire from="(80,130)" to="(180,130)"/>
-    <wire from="(50,70)" to="(80,70)"/>
-    <wire from="(110,170)" to="(110,270)"/>
-    <wire from="(240,170)" to="(260,170)"/>
-    <wire from="(240,210)" to="(260,210)"/>
-    <wire from="(230,150)" to="(240,150)"/>
-    <wire from="(230,230)" to="(240,230)"/>
     <wire from="(110,170)" to="(180,170)"/>
+    <wire from="(310,190)" to="(350,190)"/>
     <wire from="(50,210)" to="(50,270)"/>
+    <wire from="(80,130)" to="(180,130)"/>
     <wire from="(110,110)" to="(110,170)"/>
     <wire from="(50,210)" to="(180,210)"/>
-    <comp lib="1" loc="(230,150)" name="OR Gate">
-      <a name="inputs" val="2"/>
+    <comp lib="6" loc="(139,36)" name="Text">
+      <a name="text" val="c"/>
+    </comp>
+    <comp lib="6" loc="(80,37)" name="Text">
+      <a name="text" val="a'"/>
+    </comp>
+    <comp lib="0" loc="(110,60)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="5" loc="(350,190)" name="LED"/>
+    <comp lib="6" loc="(110,286)" name="Text">
+      <a name="text" val="b"/>
     </comp>
     <comp lib="1" loc="(310,190)" name="AND Gate">
       <a name="inputs" val="2"/>
@@ -94,41 +105,42 @@
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
     </comp>
+    <comp lib="6" loc="(79,286)" name="Text">
+      <a name="text" val="a'"/>
+    </comp>
     <comp lib="6" loc="(377,167)" name="Text">
       <a name="text" val="F' = (a' + b') * (a + c')"/>
     </comp>
-    <comp lib="6" loc="(49,34)" name="Text">
-      <a name="text" val="a"/>
+    <comp lib="6" loc="(140,286)" name="Text">
+      <a name="text" val="c"/>
+    </comp>
+    <comp lib="1" loc="(110,110)" name="NOT Gate">
+      <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(50,60)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="6" loc="(109,36)" name="Text">
-      <a name="text" val="b"/>
+    <comp lib="6" loc="(50,284)" name="Text">
+      <a name="text" val="a"/>
+    </comp>
+    <comp lib="1" loc="(230,150)" name="OR Gate">
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="1" loc="(140,110)" name="NOT Gate">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="6" loc="(139,36)" name="Text">
-      <a name="text" val="c"/>
-    </comp>
     <comp lib="1" loc="(230,230)" name="OR Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="5" loc="(350,190)" name="LED"/>
-    <comp lib="0" loc="(110,60)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
+    <comp lib="6" loc="(49,34)" name="Text">
+      <a name="text" val="a"/>
     </comp>
-    <comp lib="1" loc="(110,110)" name="NOT Gate">
-      <a name="facing" val="south"/>
+    <comp lib="6" loc="(109,36)" name="Text">
+      <a name="text" val="b"/>
     </comp>
     <comp lib="1" loc="(80,110)" name="NOT Gate">
       <a name="facing" val="south"/>
-    </comp>
-    <comp lib="6" loc="(82,36)" name="Text">
-      <a name="text" val="a'"/>
     </comp>
   </circuit>
 </project>
