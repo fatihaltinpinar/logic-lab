@@ -4,8 +4,7 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
+      <a name="facing" val="south"/>
       <a name="appear" val="center"/>
     </tool>
     <tool name="Pin">
@@ -22,6 +21,7 @@
       <a name="facing" val="north"/>
     </tool>
     <tool name="Constant">
+      <a name="facing" val="west"/>
       <a name="value" val="0x0"/>
     </tool>
   </lib>
@@ -90,8 +90,8 @@
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#L8cpu-master/DIP_74x.circ" name="7"/>
-  <lib desc="file#L8cpu-master/L8.circ" name="8"/>
+  <lib desc="file#/home/faati/Desktop/logic-lab/L8cpu-master/74x_library.circ" name="7"/>
+  <lib desc="file#/home/faati/Desktop/logic-lab/L8cpu-master/L8.circ" name="8"/>
   <main name="part1"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -148,8 +148,38 @@
     <wire from="(220,240)" to="(300,240)"/>
     <wire from="(130,220)" to="(170,220)"/>
     <wire from="(100,260)" to="(170,260)"/>
+    <comp lib="6" loc="(357,133)" name="Text">
+      <a name="text" val="High"/>
+    </comp>
+    <comp lib="6" loc="(328,86)" name="Text">
+      <a name="text" val="Logic Monitor"/>
+    </comp>
+    <comp lib="6" loc="(356,154)" name="Text">
+      <a name="text" val="Low"/>
+    </comp>
+    <comp lib="0" loc="(70,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="1" loc="(220,240)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="5" loc="(320,150)" name="LED">
+      <a name="color" val="#37eb00"/>
+      <a name="offcolor" val="#004005"/>
+      <a name="active" val="false"/>
+    </comp>
+    <comp lib="6" loc="(331,112)" name="Text">
+      <a name="text" val="Sum"/>
+    </comp>
+    <comp lib="1" loc="(220,140)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
     <comp lib="6" loc="(356,254)" name="Text">
       <a name="text" val="Low"/>
+    </comp>
+    <comp lib="5" loc="(320,130)" name="LED">
+      <a name="offcolor" val="#400002"/>
     </comp>
     <comp lib="5" loc="(320,250)" name="LED">
       <a name="color" val="#37eb00"/>
@@ -159,45 +189,15 @@
     <comp lib="6" loc="(331,212)" name="Text">
       <a name="text" val="Carry"/>
     </comp>
-    <comp lib="6" loc="(357,233)" name="Text">
-      <a name="text" val="High"/>
-    </comp>
     <comp lib="5" loc="(320,230)" name="LED">
       <a name="offcolor" val="#400002"/>
     </comp>
-    <comp lib="0" loc="(70,120)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
-    </comp>
-    <comp lib="1" loc="(220,140)" name="XOR Gate">
-      <a name="inputs" val="2"/>
+    <comp lib="6" loc="(357,233)" name="Text">
+      <a name="text" val="High"/>
     </comp>
     <comp lib="0" loc="(70,160)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
-    </comp>
-    <comp lib="6" loc="(331,112)" name="Text">
-      <a name="text" val="Sum"/>
-    </comp>
-    <comp lib="6" loc="(328,86)" name="Text">
-      <a name="text" val="Logic Monitor"/>
-    </comp>
-    <comp lib="5" loc="(320,130)" name="LED">
-      <a name="offcolor" val="#400002"/>
-    </comp>
-    <comp lib="6" loc="(356,154)" name="Text">
-      <a name="text" val="Low"/>
-    </comp>
-    <comp lib="6" loc="(357,133)" name="Text">
-      <a name="text" val="High"/>
-    </comp>
-    <comp lib="1" loc="(220,240)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="5" loc="(320,150)" name="LED">
-      <a name="color" val="#37eb00"/>
-      <a name="offcolor" val="#004005"/>
-      <a name="active" val="false"/>
     </comp>
   </circuit>
   <circuit name="part2">
@@ -235,31 +235,14 @@
     <wire from="(230,80)" to="(240,80)"/>
     <wire from="(100,260)" to="(170,260)"/>
     <wire from="(220,240)" to="(350,240)"/>
-    <comp lib="1" loc="(220,140)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(471,92)" name="Text">
-      <a name="text" val="Sum"/>
-    </comp>
-    <comp lib="1" loc="(220,240)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(400,220)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="5" loc="(460,130)" name="LED">
-      <a name="color" val="#37eb00"/>
-      <a name="offcolor" val="#004005"/>
-      <a name="active" val="false"/>
-    </comp>
-    <comp lib="6" loc="(468,66)" name="Text">
-      <a name="text" val="Logic Monitor"/>
-    </comp>
     <comp lib="0" loc="(230,80)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="C in"/>
     </comp>
-    <comp lib="5" loc="(460,230)" name="LED">
+    <comp lib="1" loc="(220,140)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="5" loc="(460,130)" name="LED">
       <a name="color" val="#37eb00"/>
       <a name="offcolor" val="#004005"/>
       <a name="active" val="false"/>
@@ -268,35 +251,52 @@
       <a name="tristate" val="false"/>
       <a name="label" val="A"/>
     </comp>
-    <comp lib="6" loc="(496,134)" name="Text">
-      <a name="text" val="Low"/>
+    <comp lib="6" loc="(471,92)" name="Text">
+      <a name="text" val="Sum"/>
+    </comp>
+    <comp lib="1" loc="(220,240)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(497,213)" name="Text">
+      <a name="text" val="High"/>
     </comp>
     <comp lib="5" loc="(460,210)" name="LED">
       <a name="offcolor" val="#400002"/>
     </comp>
-    <comp lib="6" loc="(496,234)" name="Text">
+    <comp lib="5" loc="(460,230)" name="LED">
+      <a name="color" val="#37eb00"/>
+      <a name="offcolor" val="#004005"/>
+      <a name="active" val="false"/>
+    </comp>
+    <comp lib="6" loc="(496,134)" name="Text">
       <a name="text" val="Low"/>
+    </comp>
+    <comp lib="1" loc="(330,200)" name="AND Gate">
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(70,160)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
     </comp>
-    <comp lib="6" loc="(497,213)" name="Text">
-      <a name="text" val="High"/>
-    </comp>
-    <comp lib="1" loc="(350,120)" name="XOR Gate">
-      <a name="inputs" val="2"/>
+    <comp lib="5" loc="(460,110)" name="LED">
+      <a name="offcolor" val="#400002"/>
     </comp>
     <comp lib="6" loc="(497,113)" name="Text">
       <a name="text" val="High"/>
     </comp>
-    <comp lib="5" loc="(460,110)" name="LED">
-      <a name="offcolor" val="#400002"/>
+    <comp lib="6" loc="(468,66)" name="Text">
+      <a name="text" val="Logic Monitor"/>
+    </comp>
+    <comp lib="1" loc="(350,120)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(496,234)" name="Text">
+      <a name="text" val="Low"/>
     </comp>
     <comp lib="6" loc="(471,192)" name="Text">
       <a name="text" val="Carry"/>
     </comp>
-    <comp lib="1" loc="(330,200)" name="AND Gate">
+    <comp lib="1" loc="(400,220)" name="OR Gate">
       <a name="inputs" val="2"/>
     </comp>
   </circuit>
@@ -341,12 +341,12 @@
     <wire from="(160,230)" to="(210,230)"/>
     <wire from="(160,190)" to="(210,190)"/>
     <wire from="(160,150)" to="(210,150)"/>
+    <wire from="(480,450)" to="(480,460)"/>
+    <wire from="(470,520)" to="(470,530)"/>
     <wire from="(480,270)" to="(480,280)"/>
     <wire from="(250,180)" to="(300,180)"/>
     <wire from="(480,390)" to="(480,400)"/>
     <wire from="(480,330)" to="(480,340)"/>
-    <wire from="(470,520)" to="(470,530)"/>
-    <wire from="(480,450)" to="(480,460)"/>
     <wire from="(440,330)" to="(440,350)"/>
     <wire from="(360,520)" to="(470,520)"/>
     <wire from="(170,250)" to="(210,250)"/>
@@ -381,19 +381,50 @@
     <wire from="(290,200)" to="(290,260)"/>
     <wire from="(160,70)" to="(360,70)"/>
     <wire from="(360,400)" to="(360,520)"/>
-    <comp lib="0" loc="(140,70)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Add/Subtract"/>
+    <comp lib="0" loc="(400,380)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
     </comp>
-    <comp lib="6" loc="(536,464)" name="Text">
+    <comp lib="5" loc="(500,260)" name="LED">
+      <a name="offcolor" val="#400002"/>
+    </comp>
+    <comp lib="1" loc="(250,180)" name="XOR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(526,534)" name="Text">
       <a name="text" val="Low"/>
+    </comp>
+    <comp lib="6" loc="(537,323)" name="Text">
+      <a name="text" val="High"/>
+    </comp>
+    <comp lib="5" loc="(500,340)" name="LED">
+      <a name="color" val="#37eb00"/>
+      <a name="offcolor" val="#004005"/>
+      <a name="active" val="false"/>
+    </comp>
+    <comp lib="0" loc="(140,390)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A2"/>
     </comp>
     <comp lib="6" loc="(510,370)" name="Text">
       <a name="text" val="C2"/>
     </comp>
-    <comp lib="0" loc="(400,380)" name="Splitter">
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
+    <comp lib="0" loc="(140,170)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B1"/>
+    </comp>
+    <comp lib="6" loc="(536,344)" name="Text">
+      <a name="text" val="Low"/>
+    </comp>
+    <comp lib="5" loc="(500,440)" name="LED">
+      <a name="offcolor" val="#400002"/>
+    </comp>
+    <comp lib="6" loc="(527,513)" name="Text">
+      <a name="text" val="High"/>
+    </comp>
+    <comp lib="6" loc="(509,308)" name="Text">
+      <a name="text" val="C1"/>
     </comp>
     <comp lib="0" loc="(210,390)" name="Splitter">
       <a name="facing" val="west"/>
@@ -401,59 +432,16 @@
       <a name="incoming" val="4"/>
       <a name="appear" val="right"/>
     </comp>
-    <comp lib="6" loc="(536,404)" name="Text">
-      <a name="text" val="Low"/>
+    <comp lib="5" loc="(490,510)" name="LED">
+      <a name="offcolor" val="#400002"/>
     </comp>
-    <comp lib="6" loc="(510,245)" name="Text">
-      <a name="text" val="C0"/>
-    </comp>
-    <comp lib="1" loc="(250,180)" name="XOR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="5" loc="(490,530)" name="LED">
-      <a name="color" val="#37eb00"/>
-      <a name="offcolor" val="#004005"/>
-      <a name="active" val="false"/>
+    <comp lib="5" loc="(500,380)" name="LED">
+      <a name="offcolor" val="#400002"/>
     </comp>
     <comp lib="6" loc="(537,383)" name="Text">
       <a name="text" val="High"/>
     </comp>
-    <comp lib="6" loc="(536,344)" name="Text">
-      <a name="text" val="Low"/>
-    </comp>
     <comp lib="5" loc="(500,460)" name="LED">
-      <a name="color" val="#37eb00"/>
-      <a name="offcolor" val="#004005"/>
-      <a name="active" val="false"/>
-    </comp>
-    <comp lib="6" loc="(536,284)" name="Text">
-      <a name="text" val="Low"/>
-    </comp>
-    <comp lib="5" loc="(500,440)" name="LED">
-      <a name="offcolor" val="#400002"/>
-    </comp>
-    <comp lib="6" loc="(537,443)" name="Text">
-      <a name="text" val="High"/>
-    </comp>
-    <comp lib="6" loc="(526,534)" name="Text">
-      <a name="text" val="Low"/>
-    </comp>
-    <comp lib="6" loc="(537,263)" name="Text">
-      <a name="text" val="High"/>
-    </comp>
-    <comp lib="0" loc="(140,140)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B0"/>
-    </comp>
-    <comp lib="1" loc="(250,260)" name="XOR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="5" loc="(500,320)" name="LED">
-      <a name="offcolor" val="#400002"/>
-    </comp>
-    <comp lib="5" loc="(500,400)" name="LED">
       <a name="color" val="#37eb00"/>
       <a name="offcolor" val="#004005"/>
       <a name="active" val="false"/>
@@ -461,27 +449,37 @@
     <comp lib="6" loc="(501,498)" name="Text">
       <a name="text" val="Carry Out"/>
     </comp>
-    <comp lib="0" loc="(140,390)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A2"/>
-    </comp>
     <comp lib="0" loc="(140,360)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="A1"/>
     </comp>
-    <comp lib="6" loc="(537,323)" name="Text">
+    <comp lib="5" loc="(490,530)" name="LED">
+      <a name="color" val="#37eb00"/>
+      <a name="offcolor" val="#004005"/>
+      <a name="active" val="false"/>
+    </comp>
+    <comp lib="6" loc="(537,443)" name="Text">
       <a name="text" val="High"/>
     </comp>
-    <comp lib="5" loc="(500,380)" name="LED">
-      <a name="offcolor" val="#400002"/>
-    </comp>
-    <comp lib="6" loc="(508,216)" name="Text">
-      <a name="text" val="Logic Monitor"/>
+    <comp lib="0" loc="(140,420)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A3"/>
     </comp>
     <comp lib="5" loc="(500,280)" name="LED">
       <a name="color" val="#37eb00"/>
       <a name="offcolor" val="#004005"/>
       <a name="active" val="false"/>
+    </comp>
+    <comp lib="0" loc="(140,240)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B3"/>
+    </comp>
+    <comp lib="3" loc="(380,380)" name="Adder">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(140,70)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Add/Subtract"/>
     </comp>
     <comp lib="0" loc="(320,210)" name="Splitter">
       <a name="facing" val="west"/>
@@ -489,56 +487,58 @@
       <a name="incoming" val="4"/>
       <a name="appear" val="right"/>
     </comp>
-    <comp lib="6" loc="(511,428)" name="Text">
-      <a name="text" val="C3"/>
-    </comp>
-    <comp lib="0" loc="(140,170)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B1"/>
-    </comp>
-    <comp lib="0" loc="(140,240)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B3"/>
-    </comp>
-    <comp lib="0" loc="(140,330)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A0"/>
-    </comp>
-    <comp lib="5" loc="(490,510)" name="LED">
+    <comp lib="5" loc="(500,320)" name="LED">
       <a name="offcolor" val="#400002"/>
-    </comp>
-    <comp lib="3" loc="(380,380)" name="Adder">
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(140,420)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A3"/>
-    </comp>
-    <comp lib="6" loc="(509,308)" name="Text">
-      <a name="text" val="C1"/>
     </comp>
     <comp lib="1" loc="(250,140)" name="XOR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="5" loc="(500,260)" name="LED">
-      <a name="offcolor" val="#400002"/>
+    <comp lib="6" loc="(508,216)" name="Text">
+      <a name="text" val="Logic Monitor"/>
+    </comp>
+    <comp lib="6" loc="(537,263)" name="Text">
+      <a name="text" val="High"/>
+    </comp>
+    <comp lib="1" loc="(250,260)" name="XOR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(250,220)" name="XOR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(140,210)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B2"/>
     </comp>
-    <comp lib="5" loc="(500,340)" name="LED">
+    <comp lib="6" loc="(536,284)" name="Text">
+      <a name="text" val="Low"/>
+    </comp>
+    <comp lib="6" loc="(510,245)" name="Text">
+      <a name="text" val="C0"/>
+    </comp>
+    <comp lib="6" loc="(536,404)" name="Text">
+      <a name="text" val="Low"/>
+    </comp>
+    <comp lib="0" loc="(140,330)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A0"/>
+    </comp>
+    <comp lib="6" loc="(511,428)" name="Text">
+      <a name="text" val="C3"/>
+    </comp>
+    <comp lib="5" loc="(500,400)" name="LED">
       <a name="color" val="#37eb00"/>
       <a name="offcolor" val="#004005"/>
       <a name="active" val="false"/>
     </comp>
-    <comp lib="6" loc="(527,513)" name="Text">
-      <a name="text" val="High"/>
+    <comp lib="6" loc="(536,464)" name="Text">
+      <a name="text" val="Low"/>
     </comp>
-    <comp lib="1" loc="(250,220)" name="XOR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
+    <comp lib="0" loc="(140,140)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B0"/>
     </comp>
   </circuit>
   <circuit name="part4">
@@ -566,13 +566,15 @@
     <wire from="(450,100)" to="(450,330)"/>
     <wire from="(190,250)" to="(220,250)"/>
     <wire from="(540,370)" to="(560,370)"/>
-    <wire from="(130,190)" to="(130,360)"/>
     <wire from="(530,430)" to="(560,430)"/>
     <wire from="(270,150)" to="(270,190)"/>
     <wire from="(280,120)" to="(430,120)"/>
     <wire from="(400,360)" to="(410,360)"/>
     <wire from="(140,200)" to="(220,200)"/>
     <wire from="(100,140)" to="(100,190)"/>
+    <wire from="(150,150)" to="(160,150)"/>
+    <wire from="(190,150)" to="(200,150)"/>
+    <wire from="(180,220)" to="(190,220)"/>
     <wire from="(530,250)" to="(530,300)"/>
     <wire from="(560,370)" to="(560,380)"/>
     <wire from="(560,250)" to="(560,260)"/>
@@ -582,10 +584,12 @@
     <wire from="(280,120)" to="(280,200)"/>
     <wire from="(320,360)" to="(320,440)"/>
     <wire from="(420,220)" to="(420,300)"/>
+    <wire from="(140,150)" to="(140,170)"/>
     <wire from="(100,410)" to="(270,410)"/>
     <wire from="(180,240)" to="(220,240)"/>
     <wire from="(50,300)" to="(150,300)"/>
     <wire from="(180,240)" to="(180,460)"/>
+    <wire from="(190,220)" to="(220,220)"/>
     <wire from="(250,200)" to="(280,200)"/>
     <wire from="(130,190)" to="(220,190)"/>
     <wire from="(520,320)" to="(540,320)"/>
@@ -602,22 +606,25 @@
     <wire from="(350,360)" to="(360,360)"/>
     <wire from="(350,480)" to="(360,480)"/>
     <wire from="(170,460)" to="(180,460)"/>
+    <wire from="(140,150)" to="(150,150)"/>
+    <wire from="(180,150)" to="(190,150)"/>
+    <wire from="(170,220)" to="(180,220)"/>
     <wire from="(250,180)" to="(260,180)"/>
-    <wire from="(130,150)" to="(270,150)"/>
     <wire from="(350,360)" to="(350,420)"/>
     <wire from="(450,340)" to="(450,400)"/>
     <wire from="(450,460)" to="(450,520)"/>
     <wire from="(430,310)" to="(500,310)"/>
     <wire from="(260,340)" to="(330,340)"/>
     <wire from="(520,330)" to="(530,330)"/>
+    <wire from="(390,520)" to="(450,520)"/>
     <wire from="(290,140)" to="(290,210)"/>
     <wire from="(560,420)" to="(560,430)"/>
     <wire from="(560,300)" to="(560,310)"/>
     <wire from="(390,400)" to="(450,400)"/>
-    <wire from="(390,520)" to="(450,520)"/>
     <wire from="(260,110)" to="(260,180)"/>
     <wire from="(130,150)" to="(130,160)"/>
     <wire from="(170,230)" to="(170,240)"/>
+    <wire from="(130,190)" to="(130,200)"/>
     <wire from="(200,360)" to="(320,360)"/>
     <wire from="(170,230)" to="(220,230)"/>
     <wire from="(390,330)" to="(390,340)"/>
@@ -625,6 +632,7 @@
     <wire from="(50,190)" to="(100,190)"/>
     <wire from="(520,310)" to="(560,310)"/>
     <wire from="(440,110)" to="(440,320)"/>
+    <wire from="(130,210)" to="(130,360)"/>
     <wire from="(350,480)" to="(350,560)"/>
     <wire from="(330,350)" to="(330,380)"/>
     <wire from="(250,240)" to="(290,240)"/>
@@ -634,7 +642,11 @@
     <wire from="(530,490)" to="(560,490)"/>
     <wire from="(160,220)" to="(160,270)"/>
     <wire from="(270,230)" to="(270,410)"/>
+    <wire from="(160,100)" to="(160,150)"/>
     <wire from="(410,310)" to="(410,360)"/>
+    <wire from="(130,150)" to="(140,150)"/>
+    <wire from="(170,150)" to="(180,150)"/>
+    <wire from="(160,220)" to="(170,220)"/>
     <wire from="(210,270)" to="(220,270)"/>
     <wire from="(420,300)" to="(500,300)"/>
     <wire from="(260,280)" to="(260,340)"/>
@@ -644,16 +656,18 @@
     <wire from="(560,430)" to="(560,440)"/>
     <wire from="(560,310)" to="(560,320)"/>
     <wire from="(160,180)" to="(220,180)"/>
-    <wire from="(160,220)" to="(220,220)"/>
     <wire from="(340,530)" to="(530,530)"/>
+    <wire from="(210,150)" to="(270,150)"/>
+    <wire from="(130,200)" to="(130,210)"/>
     <wire from="(310,500)" to="(360,500)"/>
     <wire from="(330,320)" to="(330,340)"/>
-    <wire from="(160,100)" to="(160,180)"/>
     <wire from="(50,270)" to="(160,270)"/>
     <wire from="(210,270)" to="(210,350)"/>
     <wire from="(250,220)" to="(420,220)"/>
+    <wire from="(140,130)" to="(140,150)"/>
     <wire from="(150,210)" to="(150,300)"/>
     <wire from="(250,210)" to="(290,210)"/>
+    <wire from="(160,150)" to="(160,180)"/>
     <wire from="(320,440)" to="(360,440)"/>
     <wire from="(340,250)" to="(340,530)"/>
     <wire from="(420,320)" to="(420,420)"/>
@@ -667,7 +681,6 @@
     <wire from="(50,330)" to="(140,330)"/>
     <wire from="(330,380)" to="(360,380)"/>
     <wire from="(200,260)" to="(200,360)"/>
-    <wire from="(140,130)" to="(140,170)"/>
     <wire from="(400,420)" to="(420,420)"/>
     <wire from="(400,300)" to="(420,300)"/>
     <wire from="(410,310)" to="(430,310)"/>
@@ -679,187 +692,189 @@
     <wire from="(200,260)" to="(220,260)"/>
     <wire from="(350,300)" to="(360,300)"/>
     <wire from="(350,420)" to="(360,420)"/>
+    <wire from="(160,150)" to="(170,150)"/>
     <wire from="(250,280)" to="(260,280)"/>
+    <wire from="(200,150)" to="(210,150)"/>
     <wire from="(150,210)" to="(220,210)"/>
     <wire from="(430,120)" to="(430,310)"/>
     <wire from="(350,300)" to="(350,360)"/>
     <wire from="(350,420)" to="(350,480)"/>
     <wire from="(190,250)" to="(190,370)"/>
     <wire from="(450,400)" to="(450,460)"/>
-    <comp lib="0" loc="(350,560)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
+    <comp lib="6" loc="(450,592)" name="Text">
+      <a name="text" val="Clear"/>
     </comp>
-    <comp lib="0" loc="(50,220)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B3"/>
+    <comp lib="6" loc="(393,236)" name="Text">
+      <a name="text" val="(A3)'"/>
     </comp>
-    <comp lib="6" loc="(351,594)" name="Text">
-      <a name="text" val="Clock simulating switch"/>
-    </comp>
-    <comp lib="6" loc="(617,303)" name="Text">
-      <a name="text" val="High"/>
-    </comp>
-    <comp lib="4" loc="(400,360)" name="D Flip-Flop"/>
-    <comp lib="5" loc="(580,260)" name="LED">
-      <a name="color" val="#37eb00"/>
-      <a name="offcolor" val="#004005"/>
-      <a name="active" val="false"/>
-    </comp>
-    <comp lib="5" loc="(580,480)" name="LED">
-      <a name="offcolor" val="#400002"/>
-    </comp>
-    <comp lib="6" loc="(476,346)" name="Text">
-      <a name="text" val="(F0)'"/>
+    <comp lib="6" loc="(591,402)" name="Text">
+      <a name="text" val="F0"/>
     </comp>
     <comp lib="6" loc="(588,196)" name="Text">
       <a name="text" val="Logic Monitor"/>
     </comp>
-    <comp lib="0" loc="(50,160)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B1"/>
+    <comp lib="6" loc="(616,264)" name="Text">
+      <a name="text" val="Low"/>
+    </comp>
+    <comp lib="5" loc="(580,240)" name="LED">
+      <a name="offcolor" val="#400002"/>
+    </comp>
+    <comp lib="4" loc="(400,300)" name="D Flip-Flop"/>
+    <comp lib="6" loc="(617,363)" name="Text">
+      <a name="text" val="High"/>
     </comp>
     <comp lib="6" loc="(591,342)" name="Text">
       <a name="text" val="F1"/>
     </comp>
-    <comp lib="4" loc="(400,420)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(170,240)" name="Ground"/>
+    <comp lib="0" loc="(50,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B0"/>
+    </comp>
+    <comp lib="4" loc="(400,360)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(170,460)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(616,384)" name="Text">
+      <a name="text" val="Low"/>
+    </comp>
     <comp lib="0" loc="(50,270)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="S0"/>
     </comp>
-    <comp lib="6" loc="(286,387)" name="Text">
-      <a name="text" val="(F0)'"/>
+    <comp lib="6" loc="(617,423)" name="Text">
+      <a name="text" val="High"/>
+    </comp>
+    <comp lib="6" loc="(591,282)" name="Text">
+      <a name="text" val="F2"/>
+    </comp>
+    <comp lib="1" loc="(520,330)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="4" loc="(400,480)" name="D Flip-Flop"/>
+    <comp lib="1" loc="(520,300)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="6" loc="(617,243)" name="Text">
+      <a name="text" val="High"/>
+    </comp>
+    <comp lib="0" loc="(50,300)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S1"/>
+    </comp>
+    <comp lib="6" loc="(285,334)" name="Text">
+      <a name="text" val="(F3)'"/>
+    </comp>
+    <comp lib="0" loc="(50,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B2"/>
+    </comp>
+    <comp lib="6" loc="(617,483)" name="Text">
+      <a name="text" val="High"/>
+    </comp>
+    <comp lib="6" loc="(351,594)" name="Text">
+      <a name="text" val="Clock simulating switch"/>
+    </comp>
+    <comp lib="6" loc="(475,293)" name="Text">
+      <a name="text" val="(F3)'"/>
     </comp>
     <comp lib="5" loc="(580,380)" name="LED">
       <a name="color" val="#37eb00"/>
       <a name="offcolor" val="#004005"/>
       <a name="active" val="false"/>
     </comp>
-    <comp lib="4" loc="(400,480)" name="D Flip-Flop"/>
-    <comp lib="5" loc="(580,300)" name="LED">
-      <a name="offcolor" val="#400002"/>
-    </comp>
-    <comp lib="0" loc="(170,460)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(450,592)" name="Text">
-      <a name="text" val="Clear"/>
-    </comp>
-    <comp lib="6" loc="(142,468)" name="Text">
-      <a name="text" val="M"/>
-    </comp>
-    <comp lib="5" loc="(580,420)" name="LED">
-      <a name="offcolor" val="#400002"/>
-    </comp>
-    <comp lib="6" loc="(616,444)" name="Text">
-      <a name="text" val="Low"/>
-    </comp>
-    <comp lib="4" loc="(400,300)" name="D Flip-Flop"/>
-    <comp lib="6" loc="(393,236)" name="Text">
-      <a name="text" val="(A3)'"/>
-    </comp>
-    <comp lib="0" loc="(50,130)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B0"/>
-    </comp>
-    <comp lib="6" loc="(617,423)" name="Text">
+    <comp lib="6" loc="(617,303)" name="Text">
       <a name="text" val="High"/>
     </comp>
-    <comp lib="6" loc="(591,402)" name="Text">
-      <a name="text" val="F0"/>
+    <comp lib="6" loc="(286,387)" name="Text">
+      <a name="text" val="(F0)'"/>
     </comp>
-    <comp lib="0" loc="(450,560)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(616,264)" name="Text">
-      <a name="text" val="Low"/>
-    </comp>
-    <comp lib="6" loc="(616,504)" name="Text">
-      <a name="text" val="Low"/>
-    </comp>
-    <comp lib="7" loc="(220,170)" name="74181">
-      <a name="labelfont" val="SansSerif plain 6"/>
-    </comp>
-    <comp lib="6" loc="(617,483)" name="Text">
-      <a name="text" val="High"/>
-    </comp>
-    <comp lib="5" loc="(580,320)" name="LED">
+    <comp lib="5" loc="(580,260)" name="LED">
       <a name="color" val="#37eb00"/>
       <a name="offcolor" val="#004005"/>
       <a name="active" val="false"/>
-    </comp>
-    <comp lib="6" loc="(616,324)" name="Text">
-      <a name="text" val="Low"/>
-    </comp>
-    <comp lib="5" loc="(580,440)" name="LED">
-      <a name="color" val="#37eb00"/>
-      <a name="offcolor" val="#004005"/>
-      <a name="active" val="false"/>
-    </comp>
-    <comp lib="0" loc="(50,190)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B2"/>
-    </comp>
-    <comp lib="5" loc="(580,360)" name="LED">
-      <a name="offcolor" val="#400002"/>
-    </comp>
-    <comp lib="1" loc="(520,320)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="6" loc="(591,222)" name="Text">
-      <a name="text" val="F3"/>
-    </comp>
-    <comp lib="6" loc="(617,363)" name="Text">
-      <a name="text" val="High"/>
-    </comp>
-    <comp lib="6" loc="(475,293)" name="Text">
-      <a name="text" val="(F3)'"/>
-    </comp>
-    <comp lib="1" loc="(520,300)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="6" loc="(591,282)" name="Text">
-      <a name="text" val="F2"/>
-    </comp>
-    <comp lib="0" loc="(50,360)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="s3"/>
-    </comp>
-    <comp lib="1" loc="(520,330)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="6" loc="(617,243)" name="Text">
-      <a name="text" val="High"/>
-    </comp>
-    <comp lib="6" loc="(616,384)" name="Text">
-      <a name="text" val="Low"/>
-    </comp>
-    <comp lib="0" loc="(50,300)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="S1"/>
     </comp>
     <comp lib="5" loc="(580,500)" name="LED">
       <a name="color" val="#37eb00"/>
       <a name="offcolor" val="#004005"/>
       <a name="active" val="false"/>
     </comp>
-    <comp lib="0" loc="(170,240)" name="Ground"/>
+    <comp lib="0" loc="(350,560)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(616,504)" name="Text">
+      <a name="text" val="Low"/>
+    </comp>
+    <comp lib="0" loc="(450,560)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+    </comp>
     <comp lib="0" loc="(50,330)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="S2"/>
     </comp>
-    <comp lib="6" loc="(285,334)" name="Text">
-      <a name="text" val="(F3)'"/>
+    <comp lib="0" loc="(50,360)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="s3"/>
     </comp>
-    <comp lib="5" loc="(580,240)" name="LED">
+    <comp lib="5" loc="(580,360)" name="LED">
       <a name="offcolor" val="#400002"/>
     </comp>
     <comp lib="1" loc="(520,310)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
+    <comp lib="4" loc="(400,420)" name="D Flip-Flop"/>
+    <comp lib="5" loc="(580,420)" name="LED">
+      <a name="offcolor" val="#400002"/>
+    </comp>
+    <comp lib="6" loc="(476,346)" name="Text">
+      <a name="text" val="(F0)'"/>
+    </comp>
+    <comp lib="5" loc="(580,480)" name="LED">
+      <a name="offcolor" val="#400002"/>
+    </comp>
+    <comp lib="0" loc="(50,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B3"/>
+    </comp>
     <comp lib="6" loc="(396,90)" name="Text">
       <a name="text" val="(A1)'"/>
+    </comp>
+    <comp lib="5" loc="(580,320)" name="LED">
+      <a name="color" val="#37eb00"/>
+      <a name="offcolor" val="#004005"/>
+      <a name="active" val="false"/>
+    </comp>
+    <comp lib="6" loc="(142,468)" name="Text">
+      <a name="text" val="M"/>
+    </comp>
+    <comp lib="6" loc="(616,324)" name="Text">
+      <a name="text" val="Low"/>
+    </comp>
+    <comp lib="1" loc="(520,320)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="5" loc="(580,300)" name="LED">
+      <a name="offcolor" val="#400002"/>
+    </comp>
+    <comp lib="7" loc="(220,170)" name="74181">
+      <a name="labelfont" val="SansSerif plain 6"/>
+    </comp>
+    <comp lib="5" loc="(580,440)" name="LED">
+      <a name="color" val="#37eb00"/>
+      <a name="offcolor" val="#004005"/>
+      <a name="active" val="false"/>
+    </comp>
+    <comp lib="6" loc="(591,222)" name="Text">
+      <a name="text" val="F3"/>
+    </comp>
+    <comp lib="0" loc="(50,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B1"/>
+    </comp>
+    <comp lib="6" loc="(616,444)" name="Text">
+      <a name="text" val="Low"/>
     </comp>
   </circuit>
 </project>
