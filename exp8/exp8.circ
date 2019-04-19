@@ -141,26 +141,29 @@
     <wire from="(230,80)" to="(300,80)"/>
     <wire from="(250,200)" to="(320,200)"/>
     <wire from="(50,170)" to="(180,170)"/>
-    <comp lib="6" loc="(28,57)" name="Text">
-      <a name="text" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(40,190)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="X"/>
-    </comp>
+    <comp lib="4" loc="(230,180)" name="D Flip-Flop"/>
+    <comp lib="5" loc="(40,70)" name="Button"/>
     <comp lib="1" loc="(160,200)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(350,190)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
+    <comp lib="6" loc="(239,174)" name="Text">
+      <a name="text" val="Q1"/>
+    </comp>
+    <comp lib="5" loc="(390,180)" name="LED">
+      <a name="offcolor" val="#400002"/>
+    </comp>
+    <comp lib="6" loc="(357,184)" name="Text">
+      <a name="text" val="Y"/>
     </comp>
     <comp lib="6" loc="(426,204)" name="Text">
       <a name="text" val="Low"/>
     </comp>
-    <comp lib="5" loc="(390,180)" name="LED">
-      <a name="offcolor" val="#400002"/>
+    <comp lib="6" loc="(28,57)" name="Text">
+      <a name="text" val="CLK"/>
+    </comp>
+    <comp lib="6" loc="(178,94)" name="Text">
+      <a name="text" val="D0"/>
     </comp>
     <comp lib="6" loc="(427,183)" name="Text">
       <a name="text" val="High"/>
@@ -170,37 +173,34 @@
       <a name="offcolor" val="#004005"/>
       <a name="active" val="false"/>
     </comp>
+    <comp lib="0" loc="(40,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="X"/>
+    </comp>
+    <comp lib="0" loc="(210,110)" name="Power">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(350,190)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(178,194)" name="Text">
+      <a name="text" val="D1"/>
+    </comp>
     <comp lib="1" loc="(160,100)" name="OR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="6" loc="(239,78)" name="Text">
-      <a name="text" val="Q0"/>
-    </comp>
-    <comp lib="6" loc="(239,174)" name="Text">
-      <a name="text" val="Q1"/>
-    </comp>
-    <comp lib="5" loc="(40,70)" name="Button"/>
-    <comp lib="6" loc="(178,194)" name="Text">
-      <a name="text" val="D1"/>
-    </comp>
     <comp lib="0" loc="(210,210)" name="Power">
       <a name="facing" val="south"/>
+    </comp>
+    <comp lib="6" loc="(239,78)" name="Text">
+      <a name="text" val="Q0"/>
     </comp>
     <comp lib="6" loc="(407,161)" name="Text">
       <a name="text" val="Logic Monitor"/>
     </comp>
-    <comp lib="6" loc="(357,184)" name="Text">
-      <a name="text" val="Y"/>
-    </comp>
-    <comp lib="4" loc="(230,180)" name="D Flip-Flop"/>
-    <comp lib="0" loc="(210,110)" name="Power">
-      <a name="facing" val="south"/>
-    </comp>
     <comp lib="4" loc="(230,80)" name="D Flip-Flop"/>
-    <comp lib="6" loc="(178,94)" name="Text">
-      <a name="text" val="D0"/>
-    </comp>
   </circuit>
   <circuit name="part2">
     <a name="circuit" val="part2"/>
@@ -278,41 +278,22 @@
     <wire from="(30,250)" to="(240,250)"/>
     <wire from="(360,90)" to="(370,90)"/>
     <wire from="(130,70)" to="(130,320)"/>
-    <comp lib="0" loc="(390,260)" name="Power">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="1" loc="(50,80)" name="NOT Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="20"/>
-    </comp>
     <comp lib="5" loc="(510,210)" name="LED">
       <a name="offcolor" val="#400002"/>
     </comp>
-    <comp lib="6" loc="(462,211)" name="Text">
-      <a name="text" val="Q1"/>
+    <comp lib="6" loc="(547,83)" name="Text">
+      <a name="text" val="High"/>
     </comp>
-    <comp lib="6" loc="(347,106)" name="Text">
-      <a name="text" val="D0"/>
+    <comp lib="5" loc="(510,80)" name="LED">
+      <a name="offcolor" val="#400002"/>
     </comp>
-    <comp lib="0" loc="(390,230)" name="Power">
-      <a name="facing" val="south"/>
+    <comp lib="5" loc="(510,230)" name="LED">
+      <a name="color" val="#37eb00"/>
+      <a name="offcolor" val="#004005"/>
+      <a name="active" val="false"/>
     </comp>
     <comp lib="6" loc="(49,325)" name="Text">
       <a name="text" val="__"/>
-    </comp>
-    <comp lib="6" loc="(347,235)" name="Text">
-      <a name="text" val="D1"/>
-    </comp>
-    <comp lib="6" loc="(72,325)" name="Text">
-      <a name="text" val="__"/>
-    </comp>
-    <comp lib="1" loc="(270,80)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(340,240)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
     </comp>
     <comp lib="6" loc="(49,337)" name="Text">
       <a name="text" val="X"/>
@@ -320,41 +301,86 @@
     <comp lib="0" loc="(390,130)" name="Power">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="6" loc="(547,213)" name="Text">
-      <a name="text" val="High"/>
-    </comp>
-    <comp lib="6" loc="(109,337)" name="Text">
-      <a name="text" val="Q1"/>
-    </comp>
-    <comp lib="6" loc="(89,337)" name="Text">
+    <comp lib="5" loc="(340,350)" name="Button"/>
+    <comp lib="6" loc="(462,85)" name="Text">
       <a name="text" val="Q0"/>
     </comp>
-    <comp lib="5" loc="(340,350)" name="Button"/>
-    <comp lib="1" loc="(270,120)" name="AND Gate">
+    <comp lib="1" loc="(200,170)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(521,63)" name="Text">
+      <a name="text" val="Logic Monitor"/>
     </comp>
     <comp lib="5" loc="(510,100)" name="LED">
       <a name="color" val="#37eb00"/>
       <a name="offcolor" val="#004005"/>
       <a name="active" val="false"/>
     </comp>
-    <comp lib="6" loc="(548,105)" name="Text">
-      <a name="text" val="Low"/>
+    <comp lib="6" loc="(107,324)" name="Text">
+      <a name="text" val="__"/>
+    </comp>
+    <comp lib="6" loc="(70,338)" name="Text">
+      <a name="text" val="Q0"/>
+    </comp>
+    <comp lib="1" loc="(340,110)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="4" loc="(410,90)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(410,220)" name="D Flip-Flop"/>
+    <comp lib="1" loc="(50,80)" name="NOT Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="1" loc="(340,240)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(390,230)" name="Power">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="6" loc="(71,325)" name="Text">
+      <a name="text" val="__"/>
+    </comp>
+    <comp lib="6" loc="(109,337)" name="Text">
+      <a name="text" val="Q1"/>
+    </comp>
+    <comp lib="6" loc="(462,211)" name="Text">
+      <a name="text" val="Q1"/>
+    </comp>
+    <comp lib="6" loc="(131,339)" name="Text">
+      <a name="text" val="Q1"/>
+    </comp>
+    <comp lib="6" loc="(347,106)" name="Text">
+      <a name="text" val="D0"/>
+    </comp>
+    <comp lib="6" loc="(88,338)" name="Text">
+      <a name="text" val="Q0"/>
+    </comp>
+    <comp lib="1" loc="(270,220)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(547,213)" name="Text">
+      <a name="text" val="High"/>
+    </comp>
+    <comp lib="1" loc="(270,120)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(29,335)" name="Text">
+      <a name="text" val="X"/>
+    </comp>
+    <comp lib="6" loc="(301,354)" name="Text">
+      <a name="text" val="CLK"/>
     </comp>
     <comp lib="0" loc="(30,40)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="4" loc="(410,90)" name="D Flip-Flop"/>
-    <comp lib="6" loc="(462,85)" name="Text">
-      <a name="text" val="Q0"/>
-    </comp>
-    <comp lib="6" loc="(548,235)" name="Text">
-      <a name="text" val="Low"/>
-    </comp>
-    <comp lib="6" loc="(71,337)" name="Text">
-      <a name="text" val="Q0"/>
+    <comp lib="0" loc="(390,260)" name="Power">
+      <a name="facing" val="south"/>
     </comp>
     <comp lib="6" loc="(29,15)" name="Text">
       <a name="text" val="X"/>
@@ -363,45 +389,19 @@
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="6" loc="(547,83)" name="Text">
-      <a name="text" val="High"/>
+    <comp lib="6" loc="(347,235)" name="Text">
+      <a name="text" val="D1"/>
     </comp>
-    <comp lib="6" loc="(301,354)" name="Text">
-      <a name="text" val="CLK"/>
+    <comp lib="6" loc="(548,235)" name="Text">
+      <a name="text" val="Low"/>
     </comp>
-    <comp lib="6" loc="(29,335)" name="Text">
-      <a name="text" val="X"/>
+    <comp lib="6" loc="(548,105)" name="Text">
+      <a name="text" val="Low"/>
     </comp>
-    <comp lib="1" loc="(200,170)" name="AND Gate">
+    <comp lib="1" loc="(270,80)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="5" loc="(510,230)" name="LED">
-      <a name="color" val="#37eb00"/>
-      <a name="offcolor" val="#004005"/>
-      <a name="active" val="false"/>
-    </comp>
-    <comp lib="6" loc="(521,63)" name="Text">
-      <a name="text" val="Logic Monitor"/>
-    </comp>
-    <comp lib="5" loc="(510,80)" name="LED">
-      <a name="offcolor" val="#400002"/>
-    </comp>
-    <comp lib="6" loc="(131,339)" name="Text">
-      <a name="text" val="Q1"/>
-    </comp>
-    <comp lib="1" loc="(270,220)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(107,324)" name="Text">
-      <a name="text" val="__"/>
-    </comp>
-    <comp lib="1" loc="(340,110)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="4" loc="(410,220)" name="D Flip-Flop"/>
   </circuit>
   <circuit name="part3">
     <a name="circuit" val="part3"/>
@@ -447,52 +447,55 @@
     <wire from="(200,200)" to="(270,200)"/>
     <wire from="(120,110)" to="(120,170)"/>
     <wire from="(210,230)" to="(210,290)"/>
-    <comp lib="6" loc="(23,151)" name="Text">
-      <a name="text" val="LSB"/>
-    </comp>
-    <comp lib="5" loc="(60,110)" name="Button"/>
-    <comp lib="1" loc="(260,130)" name="AND Gate">
-      <a name="facing" val="north"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(60,210)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(60,180)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(49,275)" name="Text">
-      <a name="text" val="Load"/>
-    </comp>
-    <comp lib="0" loc="(60,240)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
     <comp lib="5" loc="(360,160)" name="Hex Digit Display"/>
-    <comp lib="0" loc="(190,250)" name="Power">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="6" loc="(51,93)" name="Text">
-      <a name="text" val="CLK"/>
-    </comp>
-    <comp lib="7" loc="(170,160)" name="74161"/>
-    <comp lib="0" loc="(340,200)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
-      <a name="appear" val="center"/>
-    </comp>
-    <comp lib="6" loc="(24,242)" name="Text">
-      <a name="text" val="MSB"/>
-    </comp>
-    <comp lib="0" loc="(60,150)" name="Pin">
+    <comp lib="0" loc="(60,210)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="1" loc="(200,120)" name="NOT Gate">
       <a name="facing" val="west"/>
       <a name="size" val="20"/>
     </comp>
+    <comp lib="5" loc="(60,110)" name="Button"/>
+    <comp lib="7" loc="(170,160)" name="74161"/>
+    <comp lib="6" loc="(51,93)" name="Text">
+      <a name="text" val="CLK"/>
+    </comp>
+    <comp lib="6" loc="(24,242)" name="Text">
+      <a name="text" val="MSB"/>
+    </comp>
+    <comp lib="6" loc="(90,260)" name="Text">
+      <a name="text" val="____"/>
+    </comp>
+    <comp lib="6" loc="(55,275)" name="Text">
+      <a name="text" val="Increment / Load"/>
+    </comp>
+    <comp lib="0" loc="(60,240)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
     <comp lib="0" loc="(60,290)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(260,130)" name="AND Gate">
+      <a name="facing" val="north"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(340,200)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="appear" val="center"/>
+    </comp>
+    <comp lib="6" loc="(23,151)" name="Text">
+      <a name="text" val="LSB"/>
+    </comp>
+    <comp lib="0" loc="(60,150)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(190,250)" name="Power">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(60,180)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
   </circuit>
