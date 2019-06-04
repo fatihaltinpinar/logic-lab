@@ -1,0 +1,4 @@
+[submodule "74xx library"]
+	path = 74xx library
+	url = https://github.com/stsvetkov/L8cpu.git
+	branch = master
